@@ -1,0 +1,26 @@
+<html>
+  <h1>
+    Discussion Board
+  </h1>
+  <body>
+
+  Title: <input type="text" id="postLabel" name="postLabel">
+  <br>
+  Description: <input type="text" id="postDescription" name="postDescription">
+
+  <input type="button" value="submit" onclick="newPostAlert()">
+
+  <script language="javascript" type="text/javascript">
+  var body = document.getElementById("postBody").value;
+
+  function newPostAlert() {
+    var label = document.getElementById("postLabel").value;
+    var desc = document.getElementById("postDescription").value;
+    alert("Title: " + label + "\nDescription: " + desc);
+  }
+
+
+  </script>
+
+  </body>
+</html>
