@@ -21,7 +21,8 @@ function createPost() {
 }
 
 function newPostAlert() {
-	var label = document.getElementById("postLabel").value;
-	var desc = document.getElementById("postDescription").value;
-	alert("Title: " + label + "\nDescription: " + desc);
+	var name = document.getElementById("username").value;
+	var title = document.getElementById("posttitle").value;
+  var body = document.getElementById("body").value;
+	alert("Username: " + name + "\nPost Title: " + title + "\nBlog Body: " + body);
 }

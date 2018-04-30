@@ -2,6 +2,7 @@
 
 <html>
   <head>
+    <script type ="text/javascript" src="script.js"></script>
     <title>HTML Tutorial Stuff</title>
 	<style>
 	form {
@@ -35,21 +36,21 @@
     <h1 align="center">Project Xenon Discussion Board</h1>
     <p align="center">Here is a place for users to make posts and chat.</p>
 	<form action="/html/tags/html_form_tag_action.cfm">
-		User Name: <input type="text" name="username">
+		User Name: <input type="text" name="username" id="username">
 		<p></p>
-		Post Title: <input type="text" name="posttitle">
-		<p>Post Description:</p>
-		<textarea maxlength="100" rows="5" cols="30"></textarea>
-		
+		Post Title: <input type="text" name="posttitle" id="posttitle">
+		<p>Post Description: <input type="text" name = "body" id="body" cols="48" rows="48" style="width:200px; height:50px;" ></p>
+
+
 		<p></p>
 		<input type="checkbox" name="technology" value="HTML"> I agree to follow the terms of use
 		<p></p>
-		
+
 		<div class="button">
-		<button type="submit">Create Post</button>
+		<button type="submit" onclick= "createPost()">Create Post</button>
 		</div>
 	</form>
-	
-    
+
+
   </body>
 </html>
