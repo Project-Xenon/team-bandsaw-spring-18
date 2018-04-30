@@ -13,7 +13,7 @@ function printTime() {
     ":" +
     date.getSeconds();
 
-  document.getElementById("result").innerHTML = 'Timestamp: ' + str;
+  return str;
 }
 
 function createPost() {
@@ -24,5 +24,5 @@ function newPostAlert() {
 	var name = document.getElementById("username").value;
 	var title = document.getElementById("posttitle").value;
   var body = document.getElementById("body").value;
-	alert("Username: " + name + "\nPost Title: " + title + "\nBlog Body: " + body);
+	alert("Username: " + name + "\nPost Title: " + title + "\nTime of Post: " + printTime() + "\nBlog Body: " + body);
 }
